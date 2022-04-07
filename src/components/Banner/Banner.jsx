@@ -1,6 +1,7 @@
 import React from 'react';
 import './Banner.scss';
 import iconArrow from '../../assets/images/arrow-bottom.svg';
+import iconSwap from '../../assets/images/swap.svg'
 
 const Banner = () => {
   return (
@@ -45,86 +46,60 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className='banner__calendar'>
+          <div className='banner__flightCalendar'>
             <div className='row'>
               <div className='col-12 col-lg-6'>
-                <div className='form-field --dual-input'>
+                <div className='form-field'>
                   <div className='form-field__group'>
-                    <div
-                      className='form-floating --open-suggest'
-                      data-booking-suggest='P4'
-                    >
+                    <div className='form-floating'>
                       <input
-                        className='form-control form-field__input --dual-top'
+                        className='form-field__input'
                         type='text'
-                        name='FR_DepartureDate'
-                        placeholder='Depart'
-                        data-id='DepartureDate'
-                        readonly=''
-                        data-input-suggest=''
-                        data-input-picker='start'
-                        data-value='20220407'
+                        name=''
+                        id=''
                       />
-                      <label className='form-field__label' for='Depart1'>
-                        Depart
-                      </label>
+                      <label className='form-field__label'>From</label>
+                      <div className='form-field__trailing'></div>
                     </div>
-                    <div className='form-floating' data-booking-suggest='P44'>
+                    <div className="font-icon">
+                      <img src={iconSwap} alt="" />
+                    </div>
+                    <div className='form-floating'>
                       <input
-                        className='form-control form-field__input --dual-bottom'
+                        className='form-field__input'
                         type='text'
-                        name='FR_ReturnDate'
-                        placeholder='Return'
-                        data-id='ReturnDate'
-                        readonly=''
-                        data-input-suggest=''
-                        data-input-picker='end'
-                        data-value='20220413'
+                        name=''
+                        id=''
+                        value='đâsd'
                       />
-                      <label className='form-field__label' for='Return1'>
-                        Return
-                      </label>
+                      <label className='form-field__label'>From</label>
+                      <div className='form-field__trailing'></div>
                     </div>
                   </div>
                 </div>
               </div>
               <div className='col-12 col-lg-6'>
-                <div className='form-field --dual-input'>
+                <div className='form-field'>
                   <div className='form-field__group'>
-                    <div
-                      className='form-floating --open-suggest'
-                      data-booking-suggest='P4'
-                    >
+                    <div className='form-floating'>
                       <input
-                        className='form-control form-field__input --dual-top'
+                        className='form-field__input'
                         type='text'
-                        name='FR_DepartureDate'
-                        placeholder='Depart'
-                        data-id='DepartureDate'
-                        readonly=''
-                        data-input-suggest=''
-                        data-input-picker='start'
-                        data-value='20220407'
+                        name=''
+                        id=''
                       />
-                      <label className='form-field__label' for='Depart1'>
-                        Depart
-                      </label>
+                      <label className='form-field__label'>From</label>
+                      <div className='form-field__trailing'></div>
                     </div>
-                    <div className='form-floating' data-booking-suggest='P44'>
+                    <div className='form-floating'>
                       <input
-                        className='form-control form-field__input --dual-bottom'
+                        className='form-field__input'
                         type='text'
-                        name='FR_ReturnDate'
-                        placeholder='Return'
-                        data-id='ReturnDate'
-                        readonly=''
-                        data-input-suggest=''
-                        data-input-picker='end'
-                        data-value='20220413'
+                        name=''
+                        id=''
                       />
-                      <label className='form-field__label' for='Return1'>
-                        Return
-                      </label>
+                      <label className='form-field__label'>From</label>
+                      <div className='form-field__trailing'></div>
                     </div>
                   </div>
                 </div>

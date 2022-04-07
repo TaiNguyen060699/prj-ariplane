@@ -25,9 +25,6 @@
   }
 
   &__calendar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 21px;
 
     .form {
@@ -46,6 +43,10 @@
     .form-field {
       position: relative;
       margin-bottom: 16px;
+
+      &__group {
+        display: flex;
+      }
 
       .form-floating {
         position: relative;
@@ -126,6 +127,62 @@
         top: 50%;
         transform: translateY(-50%);
         cursor: pointe;
+      }
+    }
+  }
+
+  &__flightCalendar {
+    .form-field {
+      position: relative;
+
+      &__group {
+        display: flex;
+        position: relative;
+      }
+
+      .form-floating {
+        position: relative;
+        width: 100%;
+      }
+
+      &__input {
+        padding: 32px 0 32px 10px;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        border-radius: 0.8rem;
+        border: 0.1rem solid $grey-2;
+        color: $black;
+        background-color: $white;
+        text-align: left;
+      }
+
+      &__label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 15px 10px;
+        pointer-events: none;
+        border: 1px solid transparent;
+        transform-origin: 0 0;
+      }
+    }
+
+    .font-icon {
+      width: 60px;
+      height: 60px;
+      border: 1px solid $grey-3;
+      border-radius: 50%;
+      position: absolute;
+      left: 45%;
+      top: 19%;
+      z-index: 99;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+
+      img {
+        position: absolute;
+        left: 18px;
+        top: 25px;
       }
     }
   }
