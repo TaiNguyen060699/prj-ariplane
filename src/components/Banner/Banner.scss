@@ -1,0 +1,132 @@
+@use '../../style/' as *;
+
+.banner {
+  span {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    font-family: $font-default;
+    line-height: 105px;
+    color: $black;
+
+    b {
+      padding: 0 5px;
+      font-weight: 600;
+      color: $blue;
+    }
+  }
+
+  &__form {
+    padding: 32px 30px 30px;
+    background: $white;
+    box-shadow: 0px 4px 30px rgba(77, 70, 250, 0.1);
+    border-radius: 12px;
+  }
+
+  &__calendar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 21px;
+
+    .form {
+      width: 24%;
+      padding: 15px 113px 15px 20px;
+      border: 1px solid $grey;
+      border-radius: 12px;
+    }
+  }
+
+  &__flightType {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .form-field {
+      position: relative;
+      margin-bottom: 16px;
+
+      .form-floating {
+        position: relative;
+      }
+
+      &__input {
+        font-size: 16px;
+        line-height: 22px;
+        border-radius: 8px;
+        border: none;
+        color: $black;
+        background-color: $white;
+        text-align: left;
+      }
+
+      &__label {
+        font-family: $font-default;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 600;
+        color: $black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+
+        b {
+          color: $blue;
+        }
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.3rem 2.4rem;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        border-radius: 3.6rem;
+        border: 0;
+        font-family: $font-default;
+        text-align: center;
+        text-decoration: none;
+        background: 0 0;
+        vertical-align: middle;
+        cursor: pointer;
+
+        &::before {
+          content: '';
+          width: 24px;
+          height: 24px;
+          background-color: $grey;
+          border-radius: 100px;
+          position: absolute;
+          top: 2px;
+          left: 2px;
+        }
+
+        &::after {
+          content: '';
+          width: 12px;
+          height: 12px;
+          background-color: $blue;
+          border-radius: 100%;
+          position: absolute;
+          top: 0.5rem;
+          left: 0.5rem;
+        }
+      }
+
+      &__trailing {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 11px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointe;
+      }
+    }
+  }
+}

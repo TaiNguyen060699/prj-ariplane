@@ -1,0 +1,136 @@
+@use '../../style/' as *;
+
+.flight-fare-info {
+  display: flex;
+  padding: 20px 30px;
+
+  &__condition {
+    &--text {
+      display: flex;
+
+      .bamboo-ariway {
+        padding: 15px;
+
+        p,
+        span {
+          font-family: $font-default;
+          font-style: normal;
+          font-weight: 600;
+          color: $black;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+        }
+
+        span {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          text-transform: capitalize;
+
+          svg {
+            width: 3px;
+            height: 3px;
+            margin: 0 5px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+
+    &--economy {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 15px;
+
+      .city {
+        p {
+          font-family: $font-default;
+          font-style: normal;
+          font-weight: 400;
+          text-transform: capitalize;
+
+          &:last-child {
+            color: $blue;
+            font-size: 12px;
+            line-height: 18px;
+          }
+
+          &:first-child {
+            color: $black;
+            font-size: 14px;
+            line-height: 21px;
+          }
+        }
+      }
+
+      img {
+        padding: 0 5px;
+      }
+    }
+
+    &--refundable {
+      color: $black;
+      font-family: $font-default;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      text-transform: capitalize;
+    }
+  }
+
+  &__condition,
+  &__price {
+    color: $black;
+    font-family: $font-default;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    padding-left: 114px;
+  }
+
+  &__block {
+    display: flex;
+
+    &--item {
+      display: flex;
+      flex-direction: column;
+
+      .div {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .div-border {
+        padding: 5px 0;
+        border-top: 1px solid $black;
+        opacity: 0.1;
+      }
+
+      span {
+        color: $black;
+        font-family: $font-default;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: capitalize;
+
+        &:last-child {
+          padding-left: 70px;
+        }
+      }
+    }
+  }
+}

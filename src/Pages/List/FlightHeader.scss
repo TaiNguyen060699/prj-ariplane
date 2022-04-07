@@ -1,0 +1,172 @@
+@use '../../style/' as *;
+
+.flight-table {
+  background-color: $white;
+  border-radius: 12px;
+  margin-bottom: 5px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+
+    span {
+      padding-left: 10px;
+      font-family: $font-default;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $black;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+      font-family: $font-default;
+      font-style: normal;
+      font-weight: 400;
+      color: $black;
+
+      &:first-child {
+        font-size: 14px;
+        line-height: 21px;
+      }
+
+      &:last-child {
+        padding-top: 4px;
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  &__results {
+    div {
+      font-family: $font-default;
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $black;
+
+      &:first-child {
+        font-size: 14px;
+        line-height: 21px;
+        padding-bottom: 4px;
+      }
+
+      &:last-child {
+        vertical-align: middle;
+        text-align: center;
+        padding: 3px 5px;
+        font-size: 10px;
+        line-height: 15px;
+        background: rgba(77, 70, 250, 0.1);
+        border-radius: 100px;
+      }
+    }
+  }
+
+  &__item {
+    &--bag {
+      padding-bottom: 4px;
+      font-family: $font-default;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 21px;
+
+      span {
+        padding-left: 7px;
+        font-weight: 400;
+        color: $black;
+      }
+
+      b {
+        font-weight: 600;
+        color: $blue;
+      }
+    }
+  }
+
+  &__price {
+    div {
+      font-family: $font-default;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 21px;
+
+      &:first-child {
+        color: $black;
+        font-weight: 400;
+        text-decoration-line: line-through;
+        opacity: 0.5;
+      }
+
+      &:last-child {
+        color: $orange;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__button {
+    button {
+      padding: 6px 15px;
+      font-family: $font-default;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 21px;
+      background: rgba(240, 99, 54, 0.1);
+      border-radius: 12px;
+      border: none;
+      color: $orange;
+    }
+  }
+
+  &__breakcum {
+    padding-left: 30px;
+    padding-bottom: 19px;
+
+    .border {
+      display: inline-block;
+      padding-top: 4px;
+      width: 72%;
+      border-top: 1px solid $black;
+      opacity: 0.1;
+    }
+
+    span {
+      padding-right: 30px;
+
+      a {
+        font-family: $font-default;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: $black;
+        opacity: 0.4;
+      }
+
+      .active {
+        color: $blue;
+        text-decoration: underline;
+        opacity: 1;
+      }
+    }
+  }
+}

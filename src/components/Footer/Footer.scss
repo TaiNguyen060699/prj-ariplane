@@ -1,0 +1,59 @@
+@use '../../style/' as *;
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 77px 0;
+  background-color: $grey-2;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .call-us, .email {
+      display: flex;
+
+      span {
+        font-family: $font-default;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.1em;
+        color: $black;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+
+    .follow {
+      font-family: $font-default;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.1em;
+      color: $black;
+
+      &::after {
+        content: '';
+        position: relative;
+        top: 10px;
+        margin-left: 10px;
+        padding: 0 10px;
+        border-top: 1px solid $black;
+      }
+    }
+  }
+}

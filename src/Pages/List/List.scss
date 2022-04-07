@@ -1,0 +1,151 @@
+@use '../../style/' as *;
+
+.list {
+  background-color: $grey-2;
+  &__header {
+    background-color: $blue;
+
+    .header__nav {
+      ul {
+        display: flex;
+
+        li {
+          padding-right: 30px;
+
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .header__button {
+      transform: translateY(-12px);
+
+      button {
+        color: $blue;
+        background-color: $white;
+      }
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  &__left {
+    display: flex;
+
+    .text {
+      p {
+        font-family: $font-default;
+        font-style: normal;
+
+        &:first-child {
+          color: $blue;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        &:last-child {
+          color: $black;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    .swap {
+      margin: auto;
+      padding: 0 60px;
+    }
+  }
+
+  &__center {
+    span {
+      font-style: normal;
+      font-family: $font-default;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      color: $black;
+
+      &:not(:last-child) {
+        border-right: 2px solid $grey;
+        padding: 10px 15px;
+      }
+
+      &:last-child {
+        padding-left: 15px;
+      }
+    }
+
+    b {
+      color: $blue;
+    }
+  }
+
+  &__button {
+    button {
+      padding: 10px 16px;
+      color: $white;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      font-family: $font-default;
+      background-color: $orange;
+      border-radius: 12px;
+      border: 0;
+
+      img {
+        padding-left: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &__flight {
+    display: flex;
+    padding: 23px 0 10px;
+    background-color: $grey-2;
+  }
+
+  &__flightLeft {
+    width: 70%;
+    padding-left: 20px;
+
+    .flight-dropdown {
+      text-align: right;
+      padding-bottom: 5px;
+    }
+
+    select {
+      margin-left: 5px;
+      padding: 8px 65px 8px 15px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      font-family: $font-default;
+      color: $black;
+      background: $white;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__flightRight {
+    margin-left: 10px;
+    width: 270px;
+    height: 433px;
+    background-color: $white;
+    border-radius: 12px;
+  }
+}

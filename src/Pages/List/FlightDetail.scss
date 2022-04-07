@@ -1,0 +1,154 @@
+@use '../../style/' as *;
+
+.flight-detail {
+  display: flex;
+  padding: 20px 30px;
+
+  &__time {
+    display: flex;
+    width: 40%;
+
+    .flight-time {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .time-block {
+        p {
+          color: $black;
+          font-family: $font-default;
+          text-align: center;
+          font-style: normal;
+
+          &:first-child {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            text-transform: uppercase;
+          }
+
+          &:last-child {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+
+      .time-center {
+        color: $black;
+        font-family: $font-default;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+
+    .flight-icon {
+      padding: 0 30px;
+    }
+
+    .flight-depart-return {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .depart,
+      .return {
+        p {
+          color: $black;
+          font-family: $font-default;
+          font-style: normal;
+
+          &:first-child {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            text-transform: uppercase;
+          }
+
+          &:last-child {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  &__ariway {
+    .title {
+      display: flex;
+      align-items: center;
+      padding-bottom: 10px;
+
+      .text {
+        padding-left: 11px;
+
+        p,
+        span {
+          font-family: $font-default;
+          font-style: normal;
+          font-weight: 600;
+          color: $black;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+        }
+
+        span {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+
+          svg {
+            width: 3px;
+            height: 3px;
+            margin: 0 5px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      background-color: $grey;
+      border-radius: 12px;
+
+      &__text {
+        &:first-child {
+          padding-right: 65px;
+        }
+
+        p,
+        b {
+          font-family: $font-default;
+          font-style: normal;
+
+          font-size: 14px;
+          line-height: 21px;
+        }
+
+        p {
+          font-weight: 400;
+          color: $black;
+        }
+
+        b {
+          font-weight: 600;
+          color: $blue;
+        }
+      }
+    }
+  }
+}

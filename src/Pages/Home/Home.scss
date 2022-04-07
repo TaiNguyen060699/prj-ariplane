@@ -1,0 +1,12 @@
+.home {
+  background-image: url('../../assets/images/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+  }
+}
